@@ -427,8 +427,8 @@ const RobotVisual = ({ vx, vy, vz, isRunning, theme }: { vx: number, vy: number,
           </g>
           
           {/* Main Chassis Cylindrical Base */}
-          <path d="M20,100 Q100,120 180,100 L180,60 Q100,80 20,60 Z" fill="url(#chassisSideGrad)" />
-          <ellipse cx="100" cy="62" rx="80" ry="32" fill="url(#chassisTopGrad)" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+          <path d="M20,105 Q100,135 180,105 L180,60 Q100,90 20,60 Z" fill="url(#chassisSideGrad)" />
+          <ellipse cx="100" cy="60" rx="80" ry="32" fill="url(#chassisTopGrad)" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
           
           {/* Facial Expression (Eyes & Brows) */}
           <g transform="translate(0, 15)">
@@ -488,8 +488,8 @@ const RobotVisual = ({ vx, vy, vz, isRunning, theme }: { vx: number, vy: number,
               initial={false}
               animate={{
                 d: intensity > 0.1 
-                  ? `M 62 ${72 - intensity * 5} L 82 ${72 + intensity * 8}` // Aggressive slant
-                  : `M 62 70 Q 72 64 82 70`, // Happy Arch
+                  ? `M 62 ${73 - intensity * 5} L 82 ${73 + intensity * 8}` // Aggressive slant
+                  : `M 62 71 Q 72 65 82 71`, // Happy Arch
                 opacity: 1,
                 y: intensity * 2
               }}
@@ -502,8 +502,8 @@ const RobotVisual = ({ vx, vy, vz, isRunning, theme }: { vx: number, vy: number,
               initial={false}
               animate={{
                 d: intensity > 0.1 
-                  ? `M 118 ${72 + intensity * 8} L 138 ${72 - intensity * 5}` // Aggressive slant
-                  : `M 118 70 Q 128 64 138 70`, // Happy Arch
+                  ? `M 118 ${73 + intensity * 8} L 138 ${73 - intensity * 5}` // Aggressive slant
+                  : `M 118 71 Q 128 65 138 71`, // Happy Arch
                 opacity: 1,
                 y: intensity * 2
               }}
